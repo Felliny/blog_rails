@@ -1,0 +1,23 @@
+<h1>Blog index</h1>
+
+<section class="section">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="card">
+        <h2 class="card-header"><%= link_to post.title, post, class: "text-decoration-none text-reset" %></h2>
+        <div class="card-body">
+
+          <div class="card-text">
+            <%= post.content %>
+          </div>
+          <br>
+<!--          <ul class="list-group-flush list-group">-->
+<!--            <li class="list-group-item">A comment</li>-->
+<!--          </ul>-->
+
+        </div>
+      </div>
+      <br/>
+    <% end %>
+  </div>
+</section>
