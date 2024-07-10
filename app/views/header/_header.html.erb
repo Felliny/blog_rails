@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <%= link_to 'Home', root_path, class:"navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <%# if user_signed_in? %>
+
+          <li class="nav-item">
+            <%#= link_to "Conta", edit_user_registration_path, class:"nav-link" %>
+          </li>
+
+          <li class="nav-item">
+            <%#= link_to "Sair", destroy_user_session_path, method: :delete , class:"nav-link" %>
+          </li>
+
+        <%# else %>
+          <li class="nav-item">
+            <%#= link_to "Cadastrar-se", new_user_registration_path, class:"nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%#= link_to "Login", user_session_path, class:"nav-link" %>
+          </li>
+        <%# end %>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><b>Conta</b></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

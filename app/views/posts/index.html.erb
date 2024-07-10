@@ -1,7 +1,11 @@
-<h1>Blog index</h1>
+<!--<h1>Blog index</h1>-->
 
 <section class="section">
   <div class="container">
+    <br/>
+    <%= link_to 'New post', new_post_path, class: "btn btn-secondary btn-lg" %>
+    <br/>
+    <br/>
     <% @posts.each do |post| %>
       <div class="card">
         <h2 class="card-header"><%= link_to post.title, post, class: "text-decoration-none text-reset" %></h2>

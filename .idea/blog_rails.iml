@@ -28,6 +28,7 @@
     </content>
     <orderEntry type="jdk" jdkName="ruby-3.3.3-p89" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actioncable (v6.1.7.8, ruby-3.3.3-p89) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailbox (v6.1.7.8, ruby-3.3.3-p89) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v6.1.7.8, ruby-3.3.3-p89) [gem]" level="application" />
@@ -88,6 +89,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, ruby-3.3.3-p89) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, ruby-3.3.3-p89) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.10.0, ruby-3.3.3-p89) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simple_form (v5.3.1, ruby-3.3.3-p89) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.2.1, ruby-3.3.3-p89) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.5.1, ruby-3.3.3-p89) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.7.3, ruby-3.3.3-p89) [gem]" level="application" />
@@ -189,100 +191,100 @@
   </component>
   <component name="RailsPaths" isManagedAutomatically="true">
     <entry key="app">
-      <value>file://$MODULE_DIR$/app</value>
+      <value>file://$MODULE_DIR$/../blog_rails\app</value>
     </entry>
     <entry key="app/assets">
-      <value>file://$MODULE_DIR$/app/assets</value>
+      <value>file://$MODULE_DIR$/../blog_rails\app/assets</value>
     </entry>
     <entry key="app/channels">
-      <value>file://$MODULE_DIR$/app/channels</value>
+      <value>file://$MODULE_DIR$/../blog_rails\app/channels</value>
     </entry>
     <entry key="app/controllers">
-      <value>file://$MODULE_DIR$/app/controllers</value>
+      <value>file://$MODULE_DIR$/../blog_rails\app/controllers</value>
     </entry>
     <entry key="app/helpers">
-      <value>file://$MODULE_DIR$/app/helpers</value>
+      <value>file://$MODULE_DIR$/../blog_rails\app/helpers</value>
     </entry>
     <entry key="app/mailers">
-      <value>file://$MODULE_DIR$/app/mailers</value>
+      <value>file://$MODULE_DIR$/../blog_rails\app/mailers</value>
     </entry>
     <entry key="app/models">
-      <value>file://$MODULE_DIR$/app/models</value>
+      <value>file://$MODULE_DIR$/../blog_rails\app/models</value>
     </entry>
     <entry key="app/views">
-      <value>file://$MODULE_DIR$/app/views</value>
+      <value>file://$MODULE_DIR$/../blog_rails\app/views</value>
     </entry>
     <entry key="config">
-      <value>file://$MODULE_DIR$/config</value>
+      <value>file://$MODULE_DIR$/../blog_rails\config</value>
     </entry>
     <entry key="config/cable">
-      <value>file://$MODULE_DIR$/config/cable.yml</value>
+      <value>file://$MODULE_DIR$/../blog_rails\config/cable.yml</value>
     </entry>
     <entry key="config/database">
-      <value>file://$MODULE_DIR$/config/database.yml</value>
+      <value>file://$MODULE_DIR$/../blog_rails\config/database.yml</value>
     </entry>
     <entry key="config/environment">
-      <value>file://$MODULE_DIR$/config/environment.rb</value>
+      <value>file://$MODULE_DIR$/../blog_rails\config/environment.rb</value>
     </entry>
     <entry key="config/environments">
-      <value>file://$MODULE_DIR$/config/environments</value>
+      <value>file://$MODULE_DIR$/../blog_rails\config/environments</value>
     </entry>
     <entry key="config/initializers">
-      <value>file://$MODULE_DIR$/config/initializers</value>
+      <value>file://$MODULE_DIR$/../blog_rails\config/initializers</value>
     </entry>
     <entry key="config/locales">
-      <value>file://$MODULE_DIR$/config/locales</value>
+      <value>file://$MODULE_DIR$/../blog_rails\config/locales</value>
     </entry>
     <entry key="config/routes">
-      <value>file://$MODULE_DIR$/config/routes</value>
+      <value>file://$MODULE_DIR$/../blog_rails\config/routes</value>
     </entry>
     <entry key="config/routes.rb">
-      <value>file://$MODULE_DIR$/config/routes.rb</value>
+      <value>file://$MODULE_DIR$/../blog_rails\config/routes.rb</value>
     </entry>
     <entry key="config/secrets">
-      <value>file://$MODULE_DIR$/config</value>
+      <value>file://$MODULE_DIR$/../blog_rails\config</value>
     </entry>
     <entry key="db">
-      <value>file://$MODULE_DIR$/db</value>
+      <value>file://$MODULE_DIR$/../blog_rails\db</value>
     </entry>
     <entry key="db/migrate">
-      <value>file://$MODULE_DIR$/db/migrate</value>
+      <value>file://$MODULE_DIR$/../blog_rails\db/migrate</value>
     </entry>
     <entry key="db/seeds.rb">
-      <value>file://$MODULE_DIR$/db/seeds.rb</value>
+      <value>file://$MODULE_DIR$/../blog_rails\db/seeds.rb</value>
     </entry>
     <entry key="lib">
-      <value>file://$MODULE_DIR$/lib</value>
+      <value>file://$MODULE_DIR$/../blog_rails\lib</value>
     </entry>
     <entry key="lib/assets">
-      <value>file://$MODULE_DIR$/lib/assets</value>
+      <value>file://$MODULE_DIR$/../blog_rails\lib/assets</value>
     </entry>
     <entry key="lib/tasks">
-      <value>file://$MODULE_DIR$/lib/tasks</value>
+      <value>file://$MODULE_DIR$/../blog_rails\lib/tasks</value>
     </entry>
     <entry key="lib/templates">
-      <value>file://$MODULE_DIR$/lib/templates</value>
+      <value>file://$MODULE_DIR$/../blog_rails\lib/templates</value>
     </entry>
     <entry key="log">
-      <value>file://$MODULE_DIR$/log/development.log</value>
+      <value>file://$MODULE_DIR$/../blog_rails\log/development.log</value>
     </entry>
     <entry key="public">
-      <value>file://$MODULE_DIR$/public</value>
+      <value>file://$MODULE_DIR$/../blog_rails\public</value>
     </entry>
     <entry key="public/javascripts">
-      <value>file://$MODULE_DIR$/public/javascripts</value>
+      <value>file://$MODULE_DIR$/../blog_rails\public/javascripts</value>
     </entry>
     <entry key="public/stylesheets">
-      <value>file://$MODULE_DIR$/public/stylesheets</value>
+      <value>file://$MODULE_DIR$/../blog_rails\public/stylesheets</value>
     </entry>
     <entry key="tmp">
-      <value>file://$MODULE_DIR$/tmp</value>
+      <value>file://$MODULE_DIR$/../blog_rails\tmp</value>
     </entry>
     <entry key="vendor">
-      <value>file://$MODULE_DIR$/vendor</value>
+      <value>file://$MODULE_DIR$/../blog_rails\vendor</value>
     </entry>
     <entry key="vendor/assets">
-      <value>file://$MODULE_DIR$/vendor/assets</value>
+      <value>file://$MODULE_DIR$/../blog_rails\vendor/assets</value>
     </entry>
   </component>
   <component name="RakeTasksCache-v2">
