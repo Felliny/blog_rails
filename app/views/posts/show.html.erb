@@ -2,19 +2,35 @@
     <div class="card">
       <h2 class="card-header d-flex justify-content-between">
         <%= @post.title %>
-        <div>
-          <%= button_to "Edit post", edit_post_path, class: 'btn btn-secondary', form: {style: 'display:inline-block;'} %>
-          <%= button_to "Delete post", post_path(@post), method: :delete, class: "btn btn-danger", form: {style: 'display:inline-block;'} %>
-        </div>
+        <% if user_signed_in? and current_user == @post.user_id %>
+          <div>
+            <%= link_to "Edit", edit_post_path, class: 'btn btn-secondary', form: {style: 'display:inline-block;'} %>
+            <%= button_to "Delete", post_path(@post), method: :delete, class: "btn btn-danger", form: {style: 'display:inline-block;'} %>
+          </div>
+        <% end %>
       </h2>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"><%= @post.content %></li>
-      </ul>
+      <div class="card-body">
+        <p class="card-text"><%= @post.content %></p>
+      </div>
     </div>
 </section>
 
 
 <!--Comments -->
 <section class="container">
+  <div>
+    <h5>
+      <strong><%= @post.comments.count %></strong> Comments
+    </h5>
+    <br/>
+    <% if user_signed_in? %>
+      <h3>Leave a reply</h3>
+      <%= render 'comments/form' %>
+    <% end %>
+    <br/>
+    <%= render @post.comments %>
+
+
+  </div>
 
 </section>

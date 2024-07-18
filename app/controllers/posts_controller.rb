@@ -1,20 +1,22 @@
 class PostsController < ApplicationController
-  
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :correct_user, only: [:edit, :update, :destroy]
+
   def index
     @posts = Post.all.order('created_at DESC')
   end
 
   def new
-    @post = Post.new
+    @post = current_user.posts.build
   end
 
   def create
-    @post = Post.new(posts_params)
+    @post = current_user.posts.build(posts_params)
 
     if @post.save
       redirect_to @post, notice: 'Post was successfully created.'
     else
-      render 'new'
+      render 'index'
     end
   end
 
@@ -44,9 +46,14 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def correct_user
+    @post = current_user.posts.find_by(id: params[:id])
+    redirect_to posts_path, notice: "not authorized" if @post.nil?
+  end
+
   private
 
   def posts_params
-    params.require(:post).permit(:title, :content)
+    params.require(:post).permit(:title, :content, :user_id)
   end
 end
