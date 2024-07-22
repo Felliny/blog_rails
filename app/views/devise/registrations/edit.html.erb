@@ -27,9 +27,16 @@
     <%= f.button :submit, "Update", class: 'btn btn-secondary' %>
   </div>
 <% end %>
-
-<h3>Cancel my account</h3>
-
-<div>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete %></div>
-
-<%= link_to "Back", :back %>
+<br/>
+<div class="card">
+  <div class="card-header">
+    <h3>Cancel my account</h3>
+  </div>
+  <div class="card-body">
+    <h5 class="card-tittle">
+      <div>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete,  class: 'btn btn-danger' %></div>
+    </h5>
+  </div>
+</div>
+<br/>
+<%= link_to "Back", :back, class: 'btn btn-secondary' %>
