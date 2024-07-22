@@ -1,24 +1,50 @@
-# README
+# Blog-rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A project made with ruby ​​on rails and Bootstrap
 
-Things you may want to cover:
+# Requirements
 
-* Ruby version
+The following are requirements to be able to build and run this application:
 
-* System dependencies
+- Ruby 3.3.3
+- Rails 6.1.7.8
+- Gems:
+  - Devise
+  - simple_form   
 
-* Configuration
+# Build
 
-* Database creation
+The following are steps for building and running this application:
 
-* Database initialization
+1. Clone the repository
+Run the following commands in your terminal:
 
-* How to run the test suite
+```
+git clone git@github.com:serialexperimentscarina/rails-blog.git
+cd rails-blog
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+2. Install dependencies
+Run the following command to install all gem dependencies:
 
-* Deployment instructions
+```
+bundle install
+```
 
-* ...
+3. Create and initialize databases
+
+Run the following commands to set up the databases:
+
+```
+rails db:setup
+rails db:migrate
+```
+
+4. Run the server
+Run the following command to start the server:
+
+```
+rails s
+```
+
+Now, just visit 'localhost:3000' to see the application
