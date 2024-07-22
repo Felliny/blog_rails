@@ -2,7 +2,7 @@
     <div class="card">
       <h2 class="card-header d-flex justify-content-between">
         <%= @post.title %>
-        <% if user_signed_in? and current_user == @post.user_id %>
+        <% if current_user == @post.user %>
           <div>
             <%= link_to "Edit", edit_post_path, class: 'btn btn-secondary', form: {style: 'display:inline-block;'} %>
             <%= button_to "Delete", post_path(@post), method: :delete, class: "btn btn-danger", form: {style: 'display:inline-block;'} %>
